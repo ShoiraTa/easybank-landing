@@ -40,14 +40,14 @@ body {
     justify-content: space-around;
   }
 
-  &ai-c {
+  &-ai-c {
     align-items: center;
   }
 }
 
 button,
 .btn {
-  padding: 1rem 1.85rem;
+  padding: 0.875rem 1.85rem;
   background: linear-gradient(to left, $lim-green, $bright-can);
   border-radius: 50px;
   cursor: pointer;

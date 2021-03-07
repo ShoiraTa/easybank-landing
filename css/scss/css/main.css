@@ -40,13 +40,13 @@ body {
 .flex-jc-sa {
   justify-content: space-around;
 }
-.flexai-c {
+.flex-ai-c {
   align-items: center;
 }
 
 button,
 .btn {
-  padding: 1rem 1.85rem;
+  padding: 0.875rem 1.85rem;
   background: linear-gradient(to left, #31d35c, #2bb7da);
   border-radius: 50px;
   cursor: pointer;
@@ -94,6 +94,10 @@ button,
 .header__nav {
   padding: 24px;
 }
+.header__logo img {
+  width: 8.8rem;
+  height: 1.375;
+}
 .header__humburger > span {
   display: block;
   width: 26px;
@@ -105,5 +109,15 @@ button,
 }
 .header__links a {
   font-size: 0.85rem;
+  padding-bottom: 10px;
   color: #9698a6;
+}
+.header__links a:not(:last-child) {
+  margin-right: 2rem;
+}
+.header__links a:hover {
+  color: #2d314d;
+  transition: color 200ms ease;
+  border-bottom: 5px solid #31d35c;
+  transition: border-bottom 200ms ease;
 }

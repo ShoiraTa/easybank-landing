@@ -5,6 +5,8 @@
 
   &__logo {
     img {
+     width: 8.8rem;
+     height: 1.375;
     }
   }
 
@@ -23,8 +25,19 @@
 
   &__links{
        a{
-            font-size: $font-sm;
+          font-size: $font-sm;
+          padding-bottom: 10px;
           color: $Grayish-blue; 
+          &:not(:last-child){
+            margin-right: 2rem;
+          }
+
+          &:hover{
+            color: $Dark-blue; 
+            transition: color 200ms ease;
+            border-bottom: 5px solid $lim-green;
+            transition: border-bottom 200ms ease;
+          }
        }
   }
 }
