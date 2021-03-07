@@ -1,38 +1,69 @@
 html {
-     box-sizing: border-box;
-     font-size: 100%;
+  box-sizing: border-box;
+  font-size: 100%;
 }
 
-*, *::before, *::after {
-     box-sizing: inherit;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
-body{
-     margin: 0;
-     padding: 0;
-     font-family: "Public Sans", sans-serif  ;
-     line-height: 1.3 ;
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Public Sans", sans-serif;
+  line-height: 1.3;
+  font-size: $font-med;
+  color: $Grayish-blue;
+  font-weight: 300;
 }
 
 // flexbox
 
-.flex{
-     display: flex;
+.flex {
+  display: flex;
 
-     &-jc-sb{
-          justify-content: space-between;
-     }
+  &-jc-sb {
+    justify-content: space-between;
+  }
 
-     &-jc-c{
-          justify-content: center;
-     }
-     
-     &-jc-sa{
-          justify-content: space-around;
-     }
+  &-jc-c {
+    justify-content: center;
+  }
 
-     &ai-c{
-          align-items: center;
-     }
+  &-jc-sa {
+    justify-content: space-around;
+  }
+
+  &ai-c {
+    align-items: center;
+  }
 }
 
+button,
+.btn {
+  padding: 1rem 1.85rem;
+  background: linear-gradient(to left, $lim-green, $bright-can);
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+  color: $White;
+  font-weight: 600;
+}
+
+.hide-for-mobile {
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}

@@ -1,4 +1,8 @@
 .header {
+  &__nav {
+    padding: 24px;
+  }
+
   &__logo {
     img {
     }
@@ -15,5 +19,13 @@
         margin-bottom: 3px;
       }
     }
+  }
+
+  &__links{
+       a{
+            font-size: $font-sm;
+          color: $Grayish-blue; 
+       }
+  }
 }
-}
+
