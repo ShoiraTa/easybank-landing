@@ -3,27 +3,20 @@
 
 //640px, 1024px, 1400px
 
-$breakpoints-up: (
-  "medium": "40em",
-  "large": "64em",
-  "xlarge": "87em",
-);
-
-//639px, 1024px, 1400px
-$breakpoints-down: (
-  "small": "39.9375em",
-  "medium": "63.935em",
-  "large": "87.4375em",
-);
-
-@mixin breakpoint-up($size) {
-  @media (min-width: map-get($breakpoints-up, $size)) {
+@mixin desktop {
+  @media screen and (min-width:  1400px) {
     @content;
   }
 }
 
-@mixin breakpoint-down($size) {
-  @media (min-width: map-get($breakpoints-down, $size)) {
+@mixin tablet {
+  @media screen and (min-width: 760px) {
     @content;
   }
-};
+}
+
+@mixin mobile {
+  @media screen and (min-width: 200px) {
+    @content;
+  }
+}

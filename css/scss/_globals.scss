@@ -56,14 +56,38 @@ button,
   font-weight: 600;
 }
 
-.hide-for-mobile {
-  @include breakpoint-down(medium) {
+.hide-for-tablet {
+  @include tablet {
     display: none;
   }
 }
 
 .hide-for-desktop {
-  @include breakpoint-up(large) {
+  @include desktop {
     display: none;
+  }
+}
+
+.hide-for-mobile {
+  @include mobile {
+    display: none;
+  }
+}
+
+.show-for-tablet {
+  @include tablet {
+    display: block;
+  }
+}
+
+.show-for-desktop {
+  @include desktop {
+    display: block;
+  }
+}
+
+.show-for-mobile {
+  @include mobile {
+    display: block;
   }
 }

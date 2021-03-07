@@ -55,15 +55,39 @@ button,
   font-weight: 600;
 }
 
-@media (min-width: 63.935em) {
+@media screen and (min-width: 760px) {
+  .hide-for-tablet {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 200px) {
   .hide-for-mobile {
     display: none;
   }
 }
 
-@media (min-width: 64em) {
-  .hide-for-desktop {
-    display: none;
+@media screen and (min-width: 760px) {
+  .show-for-tablet {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .show-for-desktop {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 200px) {
+  .show-for-mobile {
+    display: block;
   }
 }
 
