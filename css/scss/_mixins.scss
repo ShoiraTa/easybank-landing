@@ -1,0 +1,22 @@
+// @media (min-width: 62em) {
+// }
+
+//640px, 1024px, 1400px
+
+@mixin desktop {
+  @media screen and (min-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 760px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (min-width: 200px) {
+    @content;
+  }
+}
