@@ -1,75 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Easybank landing page</title>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./css/scss/css/main.css">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <header class="header">
+    <title>Frontend Mentor | Easybank landing page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/scss/css/main.css" />
 
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="flex flex-jc-sb flex-ai-c header__nav">
+        <a href="/" class="header__logo">
+          <img src="./images/logo.svg" alt="Easybank" />
+        </a>
 
-  <nav class="flex flex-jc-sb flex-ai-c header__nav">
-  <a href="/" class="header__logo ">
-        <img src="./images/logo.svg" alt="Easybank">
-      </a>
+        
+        <a href="#" id="btnhumburger" class="header__humburger hide-for-tablet header__open">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
 
-    
+        <div class="header__links hide-for-mobile show-for-tablet">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+        </div>
 
-  <a href="#" class="header__humburger hide-for-tablet">
-    <span></span>
-    <span></span>
-    <span></span>
-  </a>
-
-  <div class="header__links hide-for-mobile show-for-tablet">
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-    <a href="#">Blog</a>
-    <a href="#">Careers</a>
-  </div>
-
-  <button class="hide-for-mobile show-for-tablet">Request Invite
-  </button>
-  </nav>
-  
-  
+        <button class="hide-for-mobile show-for-tablet">Request Invite</button>
+      </nav>
     </header>
-  
-  
-  
 
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  <!--  
+    <!--  
   `Home
   About
   Contact
@@ -147,11 +134,12 @@
 
   © Easybank. All Rights Reserved
 
-  <script src="./app/app.js"></script>
+  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.-->
- 
-</body>
+
+    <script src="./app/app.js"></script>
+  </body>
 </html>

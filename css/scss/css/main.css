@@ -109,10 +109,23 @@ button,
   width: 26px;
   height: 2px;
   background-color: #2d314d;
+  transition: all 0.3s ease-in-out;
 }
 
 .header__humburger > span:not(:last-child) {
-  margin-bottom: 3px;
+  margin-bottom: 5px;
+}
+
+.header__open > span:nth-child(2) {
+  opacity: 0;
+}
+
+.header__open > span {
+  transform: rotate(45deg);
+}
+
+.header__open > span:last-child {
+  transform: rotate(-45deg);
 }
 
 .header__links a {
